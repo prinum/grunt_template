@@ -1,9 +1,6 @@
 Grunt_template
 ======================== 
 
-
-folder分けは[ここ](http://www.monster-dive.com/blog/web_creative/20140110_001102.php)を参考にしている。
-
 ###install grunt
     $ npm install -g grunt-cli
     $ npm init
@@ -20,3 +17,11 @@ folder分けは[ここ](http://www.monster-dive.com/blog/web_creative/20140110_0
 
 ###bower install
   $ bower install underscore --save
+
+###フォルダ分け
+
+##src
+  ここを編集する。
+
+##build
+  ここにgruntしたらファイルがビルドされる
