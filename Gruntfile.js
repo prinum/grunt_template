@@ -37,6 +37,10 @@ module.exports = function (grunt) {
       sass: {
         files: ['src/scss/*.scss'],
         tasks: ['compass']
+      },
+      copy: {
+        files: ['src/*.html', 'src/js/*.js', 'src/img/*'],
+        tasks: ['copy']        
       }
     },
     connect: {
@@ -54,7 +58,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'src/',
-          src: ['index.html', 'js/**', 'img/**'],
+          src: ['src/*.html', 'src/js/*.js', 'src/img/*'],
           dest: 'build/'
         }]
       }
